@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .header{
+            width: 1170px;
+            border: 5px solid red;
+            padding: 0 20px;
+            margin: auto;
+            height: 400px;
+
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row ;
+            align-items: center;
+        }
+        .left-side{
+            flex-basis: 50%;
+            border: 2px solid blue;
+        }
+        .right-side{
+            flex-basis: 50%;
+            border: 2px solid greenyellow;
+            position: relative;
+        }
+        .right-side img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        @media only screen and (max-width: 768px){
+            .container{
+                flex-direction: column;
+
+            }
+        }
+    </style>
+    <section class="header">
+        <div class="container">
+            <div class="left-side">
+                <h1>hello programer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis maxime modi obcaecati est, id rem
+                    provident asperiores explicabo voluptatum. Nihil nemo nulla distinctio accusantium, esse assumenda ab
+                    placeat obcaecati ex voluptatem, ullam quis repellendus sapiente sunt beatae tempore officia labore nostrum
+                    similique rem molestias incidunt minima. Nisi, placeat. Dolor, rem?</p>
+            </div>
+            <div class="right-side">
+                <img src="./img/Banner Image.png" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
